@@ -45,10 +45,17 @@ public class Main_Jogo {
         Scanner entradaTeclado = new Scanner(System.in);
 
         /**
+         * Cria uma instância(Objeto) da classe Baralho_Cartas.java, a qual,
+         * jutamente com a classe Carta.java, são as bibliotecas.
+         */
+        Baralho_Cartas baralho = new Baralho_Cartas();
+
+        /**
          * Variaveis locais.
          */
         int opcaoMenu;
         boolean continua = true;
+        //   boolean testeNCarta = true;
 
         /**
          * Try contra Trolls...
@@ -56,14 +63,23 @@ public class Main_Jogo {
         try {
 
             System.out.println(" Bem Vindo ao CardManager! \n Aqui você podera Criar e Manipular um baralho simples de cartas! \n Informe a baixo sua preferências. \n");
-            System.out.print(" Informe o número de Cartas do Baralho: ");
-            numCartas = entradaTeclado.nextInt();
 
-            /**
-             * Cria uma instância(Objeto) da classe Baralho_Cartas.java, a qual,
-             * jutamente com a classe Carta.java, são as bibliotecas.
-             */
-            Baralho_Cartas baralho = new Baralho_Cartas();
+            while (true) {
+
+                System.out.print(" Informe o número de Cartas do Baralho: ");
+                numCartas = entradaTeclado.nextInt();
+
+                /**
+                 * Verifica entradas válidas para o número de Cartas no Baralho.
+                 */
+                if (numCartas < 1) {
+                    System.out.print(">>> ERRO: Número inválido de cartas! <<< \n --> Informe um número Inteiro Positivo! \n \n");
+                    continue;
+
+                } else {
+                    break;
+                }
+            }
 
             /**
              * Chamada do construtor da biblioteca Baralho_Cartas, enviando as
@@ -74,10 +90,10 @@ public class Main_Jogo {
 
             while (continua) {
 
-                System.out.println("\n Menu: \n 1 - Mostra número de Cartas. || 2 - Embaralhar. \n "
+                System.out.println("\n--------------------------------\nMenu - Opções: \n 1 - Mostra número de Cartas. || 2 - Embaralhar. \n "
                         + "3 - Cortar Baralho(2 partes iguais). || 4 - Retirar Carta do Início. \n "
                         + "5 - Retirar Carta do Final. || 6 - Mover Carta do Início para o Fim. \n"
-                        + " 7 - Mostar Baralho. || 8 - Sair do Jogo.");
+                        + " 7 - Mostar Baralho. || 8 - Sair do Jogo. \n--------------------------------");
                 System.out.print("Escolha uma opção do Menu: ");
                 opcaoMenu = entradaTeclado.nextInt();
 
@@ -120,13 +136,13 @@ public class Main_Jogo {
                         break;
 
                     default:
-                        System.out.println(">>> ERRO: Esta não é uma Opção Válida! <<< \n  Tente novamente, seguindo as opções do MENU.");
+                        System.out.println(">>> ERRO: Esta não é uma Opção Válida! <<< \n --> Tente novamente, seguindo as opções do MENU!");
 
                 }
             }
         } catch (Exception error) {
 
-            JOptionPane.showMessageDialog(null, "Pow Usuário, Deixa de ser Troll ¬¬  \n " + error);
+            JOptionPane.showMessageDialog(null, "Pow Usuário, Deixa de ser Troll ¬¬  \n \n " + error);
 
         }
     }
