@@ -15,6 +15,8 @@ public class Baralho_Cartas {
     private ArrayList<Carta> cartas;
     private ArrayList<Carta> ladoA;
     private ArrayList<Carta> ladoB;
+    private String cartaFim;
+    private String cartaInicio;
 
     /**
      * Metodo que cria o baralho
@@ -87,13 +89,44 @@ public class Baralho_Cartas {
     /**
      * Método responsável por mover uma carta do inicio;
      */
-    public void retirarCartaInicio() {
+    public String retirarCartaInicio() {
+
+        int j = 0;
+        
+        for (Carta carta : cartas) {
+            for (; j < 1; j++) {
+
+                cartaInicio = ((carta.getNumCarta() + 1) + " - " + carta.getNaipeCarta()).toString();
+
+            }
+
+        }
+
+        return cartaInicio;
+
     }
 
     /**
      * Método responsável por retirar uma carta do final;
      */
-    public void retirarCartaFim() {
+    public String retirarCartaFim() {
+
+        int numCartas = getNumCartas();
+        int j;
+        
+        for (Carta carta : cartas) {
+            for (j = numCartas; j >= numCartas; j--) {
+
+
+                this.cartaFim = ((carta.getNumCarta() + 1) + " - " + carta.getNaipeCarta()).toString();
+
+                //System.out.print("passou " + j);
+            }
+
+        }
+
+        return this.cartaFim;
+
     }
 
     /*
@@ -125,13 +158,13 @@ public class Baralho_Cartas {
             System.out.println((carta.getNumCarta() + 1) + " " + carta.getNaipeCarta());
         }
 
-        for (Carta lado : ladoA) {
-            System.out.println("Lado A: " + (lado.getNumCarta() + 1) + " - " + lado.getNaipeCarta());
-        }
-
-        for (Carta lado : ladoB) {
-            System.out.println("Lado B: " + (lado.getNumCarta() + 1) + " - " + lado.getNaipeCarta());
-        }
+//        for (Carta lado : ladoA) {
+//            System.out.println("Lado A: " + (lado.getNumCarta() + 1) + " - " + lado.getNaipeCarta());
+//        }
+//
+//        for (Carta lado : ladoB) {
+//            System.out.println("Lado B: " + (lado.getNumCarta() + 1) + " - " + lado.getNaipeCarta());
+//        }
 
 
     }

@@ -30,5 +30,9 @@ public class Main_Jogo {
         baralho.getBaralho();
         //baralho.embaralha();
         //baralho.getBaralho();
+        
+        System.out.println("Carta do início: " + baralho.retirarCartaInicio());
+        
+        System.out.println("Carta do Final: " + baralho.retirarCartaFim());
     }
 }
