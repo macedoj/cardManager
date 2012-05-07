@@ -92,7 +92,7 @@ public class Baralho_Cartas {
     public String retirarCartaInicio() {
 
         int j = 0;
-        
+
         for (Carta carta : cartas) {
             for (; j < 1; j++) {
 
@@ -113,7 +113,7 @@ public class Baralho_Cartas {
 
         int numCartas = getNumCartas();
         int j;
-        
+
         for (Carta carta : cartas) {
             for (j = numCartas; j >= numCartas; j--) {
 
@@ -132,7 +132,7 @@ public class Baralho_Cartas {
     /*
      * Método responsável por mover uma carta do inicio para o final do baralho.
      */
-    public void moveCartaIniFm() {
+    public void moveCartaIniFim() {
     }
 
     /**
@@ -142,10 +142,6 @@ public class Baralho_Cartas {
     public void criaMonteDescarte() {
     }
 
-    /**
-     * Não sei exatamente o que essa porra vai fazer... mas pelo visto é
-     * necessário.
-     */
     public void monteCompra() {
     }
 
