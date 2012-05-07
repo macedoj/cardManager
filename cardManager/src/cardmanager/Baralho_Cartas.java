@@ -29,14 +29,15 @@ public class Baralho_Cartas {
         this.cartas = new ArrayList<>();
         this.ladoA = new ArrayList<>();
         this.ladoB = new ArrayList<>();
-        this.newBaralho(naipes);
+        this.newBaralho(numCartas, naipes);
 
     }
 
-    public void newBaralho(String[] naipes) {
+    public void newBaralho(int numCartas, String[] naipes) {
 
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 13; j++) {
+
+        for (int i = 0; i < naipes.length; i++) {
+            for (int j = 0; j < (numCartas / 4); j++) {
                 cartas.add(new Carta(j, naipes[i]));
             }
         }
