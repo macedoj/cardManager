@@ -8,7 +8,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
+ * Universidade Federal do Pampa
+ * Graduação: Engenharia de Software
+ * Disciplina: Práticas de Desenvolvimento de Software
+ * Professor: Wagner de Melo Reck
+ * Semestre: 5° - 2012/01 
+ * 
  * @author Juliano Rodovalho & Lucas Capanelli
+ * @version 0.1
  */
 public class Baralho_Cartas {
 
@@ -19,10 +26,13 @@ public class Baralho_Cartas {
     private String cartaInicio;
 
     /**
-     * Metodo que cria o baralho
+     * Construtor da classe Baralho_Cartas, 
+     * responsável por criar as listas que armazenaram as informações do baralho, 
+     * e por realizar a chamada do método que criará o baralho(newBaralho), respectivamente,
+     * baseado nas informações recebidas por parêmetro.
      *
-     * @param numCartas
-     * @param naipes
+     * @param int numCartas
+     * @param String[] naipes
      */
     public void Baralho_Cartas(int numCartas, String[] naipes) {
 
@@ -33,11 +43,18 @@ public class Baralho_Cartas {
 
     }
 
+    /**
+     * Método responsável por criar o baralho,
+     * baseado nas informações recebidas por parêmetro.
+     * 
+     * @param numCartas
+     * @param naipes 
+     */
     public void newBaralho(int numCartas, String[] naipes) {
 
 
         for (int i = 0; i < naipes.length; i++) {
-            for (int j = 0; j < (numCartas / 4); j++) {
+            for (int j = 0; j < (numCartas / (naipes.length)); j++) {
                 cartas.add(new Carta(j, naipes[i]));
             }
         }
@@ -55,7 +72,7 @@ public class Baralho_Cartas {
     }
 
     /**
-     * Método responsável por embaralhar o montante de cartas
+     * Método responsável por embaralhar o montante de cartas.
      */
     public void embaralha() {
 
@@ -64,7 +81,7 @@ public class Baralho_Cartas {
     }
 
     /**
-     * Método responsável por cortar o baralho em duas partes iguais;
+     * Método responsável por cortar o baralho em duas partes iguais.
      */
     public void cortarBaralho() {
         int tamLista = getNumCartas();
@@ -88,7 +105,7 @@ public class Baralho_Cartas {
     }
 
     /**
-     * Método responsável por mover uma carta do inicio;
+     * Método responsável por retirar uma carta do início do baralho.
      */
     public String retirarCartaInicio() {
 
@@ -108,7 +125,7 @@ public class Baralho_Cartas {
     }
 
     /**
-     * Método responsável por retirar uma carta do final;
+     * Método responsável por retirar uma carta do final do baralho.
      */
     public String retirarCartaFim() {
 
@@ -121,7 +138,6 @@ public class Baralho_Cartas {
 
                 this.cartaFim = ((carta.getNumCarta() + 1) + " - " + carta.getNaipeCarta()).toString();
 
-                //System.out.print("passou " + j);
             }
 
         }
@@ -131,14 +147,15 @@ public class Baralho_Cartas {
     }
 
     /*
-     * Método responsável por mover uma carta do inicio para o final do baralho.
+     * Método responsável por mover uma carta do início para o final do baralho.
      */
     public void moveCartaIniFim() {
     }
 
     /**
-     * Método responsável por criar o monte de descarte para o jogo. Neste
-     * método é possivel visualizar as cartas sem move-las;
+     * Método responsável por criar o monte de descarte para o jogo. 
+     * Neste método é possivel visualizar as cartas sem move-las.
+     * 
      */
     public void criaMonteDescarte() {
     }
@@ -147,7 +164,8 @@ public class Baralho_Cartas {
     }
 
     /**
-     * imprime todo o array de cartas do baralho, mostrando seus números naipes.
+     * Imprime todo o array de cartas do baralho, mostrando seus números e naipes.
+     * 
      */
     public void getBaralho() {
 
