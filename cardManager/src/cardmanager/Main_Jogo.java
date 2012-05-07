@@ -8,8 +8,10 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
- * Universidade Federal do Pampa Graduação: Engenharia de Software Disciplina:
- * Práticas de Desenvolvimento de Software Professor: Wagner de Melo Reck
+ * Universidade Federal do Pampa 
+ * Graduação: Engenharia de Software 
+ * Disciplina: Práticas de Desenvolvimento de Software 
+ * Professor: Wagner de Melo Reck
  * Semestre: 5° - 2012/01
  *
  * @author Juliano Rodovalho & Lucas Capanelli
@@ -55,14 +57,13 @@ public class Main_Jogo {
          */
         int opcaoMenu;
         boolean continua = true;
-        //   boolean testeNCarta = true;
 
         /**
          * Try contra Trolls...
          */
         try {
 
-            System.out.println(" Bem Vindo ao CardManager! \n Aqui você podera Criar e Manipular um baralho simples de cartas! \n Informe a baixo sua preferências. \n");
+            System.out.println(" Bem Vindo ao CardManager! \n Aqui você podera Criar e Manipular um baralho simples de cartas! \n Informe a baixo suas preferências. \n");
 
             while (true) {
 
@@ -82,12 +83,17 @@ public class Main_Jogo {
             }
 
             /**
-             * Chamada do construtor da biblioteca Baralho_Cartas, enviando as
-             * informações básicas para a criação do baralho.
+             * Chamada do construtor da biblioteca Baralho_Cartas, 
+             * enviando as informações básicas para a criação do baralho.
+             * 
              */
             baralho.Baralho_Cartas(numCartas, naipes);
 
 
+            /**
+             * Exibe o Menu e suas opções para cada ação do usuário.
+             * 
+             */
             while (continua) {
 
                 System.out.println("\n--------------------------------\nMenu - Opções: \n 1 - Mostra número de Cartas. || 2 - Embaralhar. \n "
@@ -97,6 +103,9 @@ public class Main_Jogo {
                 System.out.print("Escolha uma opção do Menu: ");
                 opcaoMenu = entradaTeclado.nextInt();
 
+                /**
+                 * Switch para a seleção correta da opção escolhida.
+                 */
                 switch (opcaoMenu) {
 
                     case 1:
@@ -131,7 +140,7 @@ public class Main_Jogo {
                         break;
 
                     case 8:
-                        System.out.println("\n === FIM DO JOGO! ===");
+                        System.out.println("\n ===== FIM DO JOGO! =====");
                         continua = false;
                         break;
 
