@@ -8,10 +8,10 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
- * Universidade Federal do Pampa 
- * Graduação: Engenharia de Software 
- * Disciplina: Práticas de Desenvolvimento de Software 
- * Professor: Wagner de Melo Reck
+ * Universidade Federal do Pampa;
+ * Graduação: Engenharia de Software; 
+ * Disciplina: Práticas de Desenvolvimento de Software;
+ * Professor: Wagner de Melo Reck;
  * Semestre: 5° - 2012/01
  *
  * @author Juliano Rodovalho & Lucas Capanelli
@@ -22,7 +22,7 @@ public class Main_Jogo {
     /**
      * Variáveis que definem as caracteristicas do baralho a ser criado.
      */
-    public static int numCartas;
+    public static int numCartas  = 52;
     public static String[] naipes = new String[4];
 
     /**
@@ -65,22 +65,22 @@ public class Main_Jogo {
 
             System.out.println(" Bem Vindo ao CardManager! \n Aqui você podera Criar e Manipular um baralho simples de cartas! \n Informe a baixo suas preferências. \n");
 
-            while (true) {
-
-                System.out.print(" Informe o número de Cartas do Baralho: ");
-                numCartas = entradaTeclado.nextInt();
-
-                /**
-                 * Verifica entradas válidas para o número de Cartas no Baralho.
-                 */
-                if (numCartas < 1) {
-                    System.out.print(">>> ERRO: Número inválido de cartas! <<< \n --> Informe um número Inteiro Positivo! \n \n");
-                    continue;
-
-                } else {
-                    break;
-                }
-            }
+//            while (true) {
+//
+//                System.out.print(" Informe o número de Cartas do Baralho: ");
+//                numCartas = entradaTeclado.nextInt();
+//
+//                /**
+//                 * Verifica entradas válidas para o número de Cartas no Baralho.
+//                 */
+//                if (numCartas < 1) {
+//                    System.out.print(">>> ERRO: Número inválido de cartas! <<< \n --> Informe um número Inteiro Positivo! \n \n");
+//                    continue;
+//
+//                } else {
+//                    break;
+//                }
+//            }
 
             /**
              * Chamada do construtor da biblioteca Baralho_Cartas, 
@@ -96,7 +96,7 @@ public class Main_Jogo {
              */
             while (continua) {
 
-                System.out.println("\n--------------------------------\nMenu - Opções: \n 1 - Mostra número de Cartas. || 2 - Embaralhar. \n "
+                System.out.println("\n--------------------------------\nMenu - Opções: \n 1 - Mostra número de Cartas n Baralho. || 2 - Embaralhar. \n "
                         + "3 - Cortar Baralho(2 partes iguais). || 4 - Retirar Carta do Início. \n "
                         + "5 - Retirar Carta do Final. || 6 - Mover Carta do Início para o Fim. \n"
                         + " 7 - Mostar Baralho. || 8 - Sair do Jogo. \n--------------------------------");

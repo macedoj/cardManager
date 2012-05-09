@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Universidade Federal do Pampa
- * Graduação: Engenharia de Software
- * Disciplina: Práticas de Desenvolvimento de Software
- * Professor: Wagner de Melo Reck
- * Semestre: 5° - 2012/01 
- * 
+ * Universidade Federal do Pampa;
+ * Graduação: Engenharia de Software; 
+ * Disciplina: Práticas de Desenvolvimento de Software;
+ * Professor: Wagner de Melo Reck;
+ * Semestre: 5° - 2012/01
+ *
  * @author Juliano Rodovalho & Lucas Capanelli
  * @version 0.1
  */
