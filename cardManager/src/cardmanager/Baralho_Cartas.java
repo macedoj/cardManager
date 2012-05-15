@@ -22,6 +22,7 @@ public class Baralho_Cartas {
     private ArrayList<Carta> cartas;
     private ArrayList<Carta> ladoA;
     private ArrayList<Carta> ladoB;
+    private ArrayList<Carta> monte;
     private String cartaFim;
     private String cartaInicio;
 
@@ -147,20 +148,64 @@ public class Baralho_Cartas {
     }
 
     /*
-     * Método responsável por mover uma carta do início para o final do baralho.
+     * Método responsável por mover uma carta do fim para o início do baralho.
      */
-    public void moveCartaIniFim() {
-    }
+    public void moveCartaFimIni() {
+        
+        cartas.add(0, getUltimaCarta());
 
+    }
+    
+    /*
+     * Método responsável por mover uma carta do início para o fim do baralho.
+     */
+    public void moveCartaIniFim(){
+        
+        int numCartas = getNumCartas();
+        cartas.add(numCartas - 1, getPrimeiraCarta());
+        
+    }
+    
+    /*
+     * Método que pega um objeto do último elemento do Array
+     */
+    public Carta getUltimaCarta(){
+        
+        int numCartas = getNumCartas();        
+        return cartas.remove(numCartas - 1);
+    
+    }
+    
+    /*
+     * Método que pega um objeto do primeiro elemento do Array
+     */
+    public Carta getPrimeiraCarta(){
+        
+        return cartas.remove(0);
+    
+    }
+    
     /**
+     * 
      * Método responsável por criar o monte de descarte para o jogo. 
-     * Neste método é possivel visualizar as cartas sem move-las.
      * 
      */
-    public void criaMonteDescarte() {
+    public void criaMonteDescarte(int nCartas) {
+        
+        this.monte = new ArrayList<>(nCartas);
+        
     }
 
-    public void monteCompra() {
+    /*
+     * Neste método é possivel visualizar as cartas sem move-las.
+     */
+    public void getMonteDesc() {
+        
+        for (Carta carta : monte) {
+        System.out.println((carta.getNumCarta() + 1) + " " + carta.getNaipeCarta());
+       
+        }
+                
     }
 
     /**

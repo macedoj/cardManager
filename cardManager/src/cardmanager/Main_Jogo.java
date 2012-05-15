@@ -79,8 +79,9 @@ public class Main_Jogo {
 
                 System.out.println("--------------------------------\nMenu - Opções: \n 1 - Mostra número de Cartas n Baralho. || 2 - Embaralhar. \n "
                         + "3 - Cortar Baralho(2 partes iguais). || 4 - Retirar Carta do Início. \n "
-                        + "5 - Retirar Carta do Final. || 6 - Mover Carta do Início para o Fim. \n"
-                        + " 7 - Mostar Baralho. || 8 - Sair do Jogo. \n--------------------------------");
+                        + "5 - Retirar Carta do Final. || 6 - Mover Carta do Fim para o início. \n"
+                        + " 7 - Mover Carta do início para o Fim. \n" 
+                        + " 8 - Mostar Baralho. || 9 - Sair do Jogo. \n--------------------------------");
                 System.out.print("Escolha uma opção do Menu: ");
                 opcaoMenu = entradaTeclado.nextInt();
 
@@ -112,15 +113,20 @@ public class Main_Jogo {
                         break;
 
                     case 6:
+                        baralho.moveCartaFimIni();
+                        System.out.println("\n -- Carta movida do Fim para o início! ");
+                        break;
+                  
+                    case 7:
                         baralho.moveCartaIniFim();
                         System.out.println("\n -- Carta movida do Início para o Fim! ");
                         break;
 
-                    case 7:
+                    case 8:
                         baralho.getBaralho();
                         break;
 
-                    case 8:
+                    case 9:
                         System.out.println("\n ===== FIM DO JOGO! =====");
                         continua = false;
                         break;
