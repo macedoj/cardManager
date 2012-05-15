@@ -139,7 +139,7 @@ public class Main_Jogo {
         } catch (Exception error) {
 
             JOptionPane.showMessageDialog(null, " Erro: \n" + error);
-
+            
         }
     }
 }
