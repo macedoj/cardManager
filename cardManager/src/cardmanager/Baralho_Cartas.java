@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Universidade Federal do Pampa;
+ * Universidade Federal do Pampa; 
  * Graduação: Engenharia de Software; 
- * Disciplina: Práticas de Desenvolvimento de Software;
+ * Disciplina: Práticas de Desenvolvimento de Software; 
  * Professor: Wagner de Melo Reck;
  * Semestre: 5° - 2012/01
  *
@@ -27,10 +27,10 @@ public class Baralho_Cartas {
     private String cartaInicio;
 
     /**
-     * Construtor da classe Baralho_Cartas, 
-     * responsável por criar as listas que armazenaram as informações do baralho, 
-     * e por realizar a chamada do método que criará o baralho(newBaralho), respectivamente,
-     * baseado nas informações recebidas por parêmetro.
+     * Construtor da classe Baralho_Cartas, responsável por criar as listas que
+     * armazenaram as informações do baralho, e por realizar a chamada do método
+     * que criará o baralho(newBaralho), respectivamente, baseado nas
+     * informações recebidas por parêmetro.
      *
      * @param int numCartas
      * @param String[] naipes
@@ -45,11 +45,11 @@ public class Baralho_Cartas {
     }
 
     /**
-     * Método responsável por criar o baralho,
-     * baseado nas informações recebidas por parêmetro.
-     * 
+     * Método responsável por criar o baralho, baseado nas informações recebidas
+     * por parêmetro.
+     *
      * @param numCartas
-     * @param naipes 
+     * @param naipes
      */
     public void newBaralho(int numCartas, String[] naipes) {
 
@@ -151,66 +151,67 @@ public class Baralho_Cartas {
      * Método responsável por mover uma carta do fim para o início do baralho.
      */
     public void moveCartaFimIni() {
-        
+
         cartas.add(0, getUltimaCarta());
 
     }
-    
+
     /*
      * Método responsável por mover uma carta do início para o fim do baralho.
      */
-    public void moveCartaIniFim(){
-        
+    public void moveCartaIniFim() {
+
         int numCartas = getNumCartas();
         cartas.add(numCartas - 1, getPrimeiraCarta());
-        
+
     }
-    
+
     /*
      * Método que pega um objeto do último elemento do Array
      */
-    public Carta getUltimaCarta(){
-        
-        int numCartas = getNumCartas();        
+    public Carta getUltimaCarta() {
+
+        int numCartas = getNumCartas();
         return cartas.remove(numCartas - 1);
-    
+
     }
-    
+
     /*
      * Método que pega um objeto do primeiro elemento do Array
      */
-    public Carta getPrimeiraCarta(){
-        
+    public Carta getPrimeiraCarta() {
+
         return cartas.remove(0);
-    
+
     }
-    
+
     /**
-     * 
-     * Método responsável por criar o monte de descarte para o jogo. 
-     * 
+     *
+     * Método responsável por criar o monte de descarte para o jogo.
+     *
      */
     public void criaMonteDescarte(int nCartas) {
-        
+
         this.monte = new ArrayList<>(nCartas);
-        
+
     }
 
     /*
      * Neste método é possivel visualizar as cartas sem move-las.
      */
     public void getMonteDesc() {
-        
+
         for (Carta carta : monte) {
-        System.out.println((carta.getNumCarta() + 1) + " " + carta.getNaipeCarta());
-       
+            System.out.println((carta.getNumCarta() + 1) + " " + carta.getNaipeCarta());
+
         }
-                
+
     }
 
     /**
-     * Imprime todo o array de cartas do baralho, mostrando seus números e naipes.
-     * 
+     * Imprime todo o array de cartas do baralho, mostrando seus números e
+     * naipes.
+     *
      */
     public void getBaralho() {
 
