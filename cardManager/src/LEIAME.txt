@@ -1,13 +1,21 @@
 ------  Card_Manager_API  ------	
 
+Card_Manager é uma biblioteca para manipulações básicas
+sobre um baralho de cartas comum.
+O seu deck é composto por 52 cartas.
+
+Operações básicas são:
+ - Ver baralho, consultar quantidade, embaralhar, 
+ - Criar monte de descarte, mover cartas do início ao fim,
+ - do fim ao início e cortar deck ao meio.
+
 Para compilar baixe a última versão do Maven em 
 http://maven.apache.org/download.html
-Testado com a versão 3.0.4
-
 
 Requisitos de Sistema
 ---------------------
-
+Maven:
+  Testado com a versão 3.0.4
 JDK:
   1.5 ou superior; necessário para executar o Maven.
 Memória:
@@ -46,10 +54,3 @@ Compilando a Biblioteca
 5) O resultado será uma biblioteca .jar, geralmente na pasta target;
    este arquivo poderá ser utilizada em qualquer projeto Java como qualquer 
    outra biblioteca.
-
-
-Contato com os autores
-----------------------
-
-lucas.capanelli.es@gmail.com
-j.rodovalho.m@gmail.com
