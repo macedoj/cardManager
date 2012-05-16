@@ -1,20 +1,38 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * ----------     CardManager API     ----------
+ * Universidade Federal do Pampa; 
+ * Graduação: Engenharia de Software; 
+ * Disciplina: Práticas de Desenvolvimento de Software; 
+ * Professor: Wagner de Melo Reck;
+ * Semestre: 5° - 2012/01
+ * @author Juliano Rodovalho & Lucas Capanelli
+ * @version 0.2
+ * 
+ * Copyright (c) 2012 Juliano Rodovalho & Lucas Capanelli
+ * 
+ *  Este arquivo faz parte da biblioteca Card_Manager
+ * 
+ *  Card_Manager é um software livre; você pode redistribui-lo e/ou 
+ *  modifica-lo dentro dos termos da Licença Pública Geral GNU como 
+ *  publicada pela Fundação do Software Livre (FSF); na versão 2 da 
+ *  Licença, ou (na sua opnião) qualquer versão.
+ * 
+ *  Este programa é distribuido na esperança que possa ser  util, 
+ *  mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO a qualquer
+ *  MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
+ *  Licença Pública Geral GNU para maiores detalhes.
+ * 
+ *  Você deve ter recebido uma cópia da Licença Pública Geral GNU
+ *  junto com este programa, se não, escreva para a Fundação do Software
+ *  Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ * 
  */
+
 package cardmanager;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-/**
- * Universidade Federal do Pampa; Graduação: Engenharia de Software; Disciplina:
- * Práticas de Desenvolvimento de Software; Professor: Wagner de Melo Reck;
- * Semestre: 5° - 2012/01
- *
- * @author Juliano Rodovalho & Lucas Capanelli
- * @version 0.1
- */
 public class Main_Jogo {
 
     /**
@@ -61,7 +79,15 @@ public class Main_Jogo {
          */
         try {
 
-            System.out.println(" Bem Vindo ao CardManager! \n Aqui você podera Criar e Manipular um baralho simples de cartas! \n Informe a baixo suas preferências.");
+            System.out.println(""
+                    + " Card_Manager Copyright (C) 2012 Juliano Rodovalho & Lucas Capanelli \n"
+                    + " This program comes with ABSOLUTELY NO WARRANTY. \n"
+                    + " This is free software, and you are welcome to redistribute it \n"
+                    + " under certain conditions; see COPYING.txt for details. \n"
+                    + "------------------------------------------------------------------------- \n"
+                    + "Bem Vindo ao Card_Manager! \n "
+                    + "Aqui você podera Criar e Manipular um baralho simples de cartas! \n "
+                    + "Informe a baixo suas preferências:");
 
             /**
              * Chamada do construtor da biblioteca Baralho_Cartas, enviando as
