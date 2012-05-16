@@ -9,7 +9,7 @@
 	<name>API Cartas</name>
 	
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>cardmanager</sourceDirectory>
 	</build>
   
 	<properties>
@@ -32,7 +32,7 @@
 					</links>
 					<show>public</show>
 					<source>1.7</source>
-					<sourcepath>${basedir}/src</sourcepath>
+					<sourcepath>${basedir}/cardmanager</sourcepath>
 				</configuration>
 				<reportSets>
 					<reportSet>

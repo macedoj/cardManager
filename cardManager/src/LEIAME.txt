@@ -44,12 +44,12 @@ Compilando a Biblioteca
 
 1) Instalar o Maven conforme seu manual de instalação.
 
-2) A pasta da biblioteca deve conter uma pasta src e um arquivo pom.xml
+2) A pasta da biblioteca deve conter uma pasta dos fontes "cardmanager" e um arquivo pom.xml
 
 3) Navegar pelo prompt de comando até o diretório com os arquivos.   
 
 4) Executar o comando: mvn clean install
-   Este comando compilará os arquivos .java do diretório src.
+   Este comando compilará os arquivos .java do diretório com os fontes.
 
 5) O resultado será uma biblioteca .jar, geralmente na pasta target;
    este arquivo poderá ser utilizada em qualquer projeto Java como qualquer 
