@@ -53,9 +53,9 @@ public class Baralho_Cartas {
      */
     public void Baralho_Cartas(int numCartas, String[] naipes) {
 
-        this.cartas = new ArrayList<>();
-        this.ladoA = new ArrayList<>();
-        this.ladoB = new ArrayList<>();
+        this.cartas = new ArrayList<Carta>();
+        this.ladoA = new ArrayList<Carta>();
+        this.ladoB = new ArrayList<Carta>();
         this.newBaralho(numCartas, naipes);
 
     }
@@ -208,7 +208,7 @@ public class Baralho_Cartas {
      */
     public void criaMonteDescarte(int nCartas) {
 
-        this.monte = new ArrayList<>(nCartas);
+        this.monte = new ArrayList<Carta>(nCartas);
 
     }
 
