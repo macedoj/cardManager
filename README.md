@@ -12,17 +12,17 @@ Operações básicas são:
 ## Requisitos de sistema
 
 * Maven: => [http://maven.apache.org/download.html]
-  Testado com a versão 3.0.4
+  * Testado com a versão 3.0.4
 * JDK:  => [http://www.java.com/pt_BR/download/]
-  1.5 ou superior; necessário para executar o Maven.
+  * 1.5 ou superior; necessário para executar o Maven.
 * Memória:
-  Não há um mínimo estipulado.
+  * Não há um mínimo estipulado.
 * Disco:
-  Cerca de 10MB de espaço necessários.
+  * Cerca de 10MB de espaço necessários.
 * Sistema Operacional:
-  Windows XP ou superior, 
+  * Windows XP ou superior, 
 * Internet:
-  Uma conexão com a internet será necessária.
+  * Uma conexão com a internet será necessária.
 
 ## Instalação
 
