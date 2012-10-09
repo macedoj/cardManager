@@ -1,13 +1,12 @@
 #cardManager
 
-Card_Manager é uma biblioteca para manipulações básicas
-sobre um baralho de cartas comum.
+Card_Manager é uma biblioteca para manipulações básicas sobre um baralho de cartas comum.
 O seu deck é composto por 52 cartas.
 
 Operações básicas são:
  - Ver baralho, consultar quantidade, embaralhar, 
  - Criar monte de descarte, mover cartas do início ao fim,
- - do fim ao início e cortar deck ao meio.
+ - Mover cartas do fim ao início e cortar deck ao meio.
  
 ## Requisitos de sistema
 
